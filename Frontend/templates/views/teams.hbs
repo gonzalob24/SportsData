@@ -1,0 +1,12 @@
+{{>header}}
+<h1>Camp Grounds</h1>
+
+<a href="/teams/new">Add new team</a>
+{{#teams}}
+    <div>
+        <h4>{{name}}</h4> 
+        <img src="{{image}}">
+    </div>
+{{/teams}}
+
+{{>footer}}
