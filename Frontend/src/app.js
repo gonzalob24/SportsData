@@ -51,11 +51,11 @@ app.post("/teams", (req, res) => {
     const image = req.body.teamImage
     const newTeam = {name: team, image: image}
     teams.push(newTeam)
-    // redirect back to campgrounds
+    // redirect back to landing
     res.redirect("/teams")
 })
 
-app.get("/teams/new", (rew, res) => {
+app.get("/teams/new", (req, res) => {
     res.render("new")
 })
 
